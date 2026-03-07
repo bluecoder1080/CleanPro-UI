@@ -54,7 +54,7 @@ export default function Pricing() {
     <section id="pricing" className="relative py-32 lg:py-40 overflow-hidden">
       {/* Layered Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-purple-glow/15 rounded-full blur-[150px] animate-pulse-glow" />
+        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-purple-glow/15 rounded-full blur-[120px]" />
         <div className="absolute bottom-0 right-1/3 w-[500px] h-[500px] bg-soft-blue/15 rounded-full blur-[130px]" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-purple-glow/10 to-transparent rounded-full blur-3xl" />
       </div>

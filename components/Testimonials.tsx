@@ -39,8 +39,8 @@ export default function Testimonials() {
     >
       {/* Background Glows */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 right-1/4 w-[500px] h-[500px] bg-soft-blue/10 rounded-full blur-[120px] animate-pulse-glow" />
-        <div className="absolute bottom-20 left-1/3 w-[600px] h-[600px] bg-purple-glow/10 rounded-full blur-[150px] animate-pulse-glow" />
+        <div className="absolute top-20 right-1/4 w-[500px] h-[500px] bg-soft-blue/10 rounded-full blur-[100px]" />
+        <div className="absolute bottom-20 left-1/3 w-[600px] h-[600px] bg-purple-glow/10 rounded-full blur-[120px]" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

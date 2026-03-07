@@ -37,7 +37,7 @@ export default function HowItWorks() {
       {/* Layered Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-20 right-1/4 w-[500px] h-[500px] bg-soft-blue/15 rounded-full blur-[140px]" />
-        <div className="absolute bottom-20 left-1/3 w-[600px] h-[600px] bg-purple-glow/12 rounded-full blur-[150px] animate-pulse-glow" />
+        <div className="absolute bottom-20 left-1/3 w-[600px] h-[600px] bg-purple-glow/12 rounded-full blur-[120px]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">

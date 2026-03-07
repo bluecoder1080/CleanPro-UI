@@ -53,8 +53,8 @@ export default function Hero() {
           <source src="/assets/hero-bg.mp4" type="video/mp4" />
         </video>
 
-        {/* Floating Shirt Animation Layer */}
-        <div className="absolute inset-0 flex items-center justify-end pr-32">
+        {/* Floating Shirt Animation Layer - Using CSS animation instead of video */}
+        <div className="absolute inset-0 flex items-center justify-end pr-32 pointer-events-none">
           <motion.div
             animate={{
               y: [0, -40, 0],
@@ -66,11 +66,9 @@ export default function Hero() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="w-full max-w-4xl opacity-15 mix-blend-screen"
+            className="w-full max-w-4xl opacity-10"
           >
-            <video autoPlay loop muted playsInline preload="none" className="w-full h-auto">
-              <source src="/assets/floating-shirt-loop.mp4" type="video/mp4" />
-            </video>
+            <div className="w-[800px] h-[800px] bg-gradient-to-br from-purple-glow/20 via-soft-blue/20 to-pink-500/20 rounded-full blur-[80px]" />
           </motion.div>
         </div>
 
@@ -80,12 +78,8 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-br from-navy-900/50 via-transparent to-purple-glow/5" />
 
         {/* Enhanced Ambient Glow Effects */}
-        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-purple-glow/15 rounded-full blur-[150px] animate-pulse-glow" />
-        <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-soft-blue/15 rounded-full blur-[150px]" />
-        <div
-          className="absolute top-1/3 right-1/3 w-96 h-96 bg-pink-500/10 rounded-full blur-[100px] animate-pulse-glow"
-          style={{ animationDelay: "2s" }}
-        />
+        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-purple-glow/8 rounded-full blur-[100px]" />
+        <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-soft-blue/8 rounded-full blur-[100px]" />
 
         {/* Grid Pattern Overlay */}
         <div
@@ -229,69 +223,21 @@ export default function Hero() {
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
               className="relative w-full h-full flex items-center justify-center"
             >
-              {/* Ambient Glow Layers */}
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-glow/40 to-soft-blue/40 rounded-full blur-[140px] animate-pulse-glow" />
-              <div className="absolute inset-0 bg-gradient-to-tl from-pink-500/30 to-cyan-500/30 rounded-full blur-[100px] opacity-70" />
+              {/* Ambient Glow Layers - Simplified */}
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-glow/30 to-soft-blue/30 rounded-full blur-[100px]" />
 
-              <div className="relative glass-card rounded-[3.5rem] p-8 w-96 h-96 glow-blue border-2 border-white/15 flex items-center justify-center">
-                {/* Gradient Border Glow */}
-                <div className="absolute inset-0 rounded-[3.5rem] bg-gradient-to-br from-soft-blue/50 via-purple-glow/50 to-pink-500/50 p-[3px] -z-10 blur-sm">
-                  <div className="w-full h-full rounded-[3.5rem] bg-navy-900/95 backdrop-blur-3xl" />
-                </div>
-
-                {/* Inner Glow Ring */}
-                <div className="absolute inset-4 bg-gradient-to-br from-purple-glow/20 to-soft-blue/20 rounded-[3rem] blur-xl" />
-
+              <div className="relative glass-card rounded-[3.5rem] p-8 w-96 h-96 border-2 border-white/15 flex items-center justify-center">
                 {/* Image Container */}
                 <div className="relative z-10 overflow-hidden rounded-3xl w-72 h-72">
-                  {/* Soft Edge Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy-900/50 via-transparent to-white/20 z-10 pointer-events-none" />
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-glow/15 to-transparent z-10 pointer-events-none opacity-0 hover:opacity-100 transition-opacity duration-500" />
-
-                  <motion.div
-                    whileHover={{ scale: 1.08 }}
-                    transition={{ duration: 0.5 }}
-                    className="w-full h-full"
-                  >
-                    <Image
-                      src="/assets/hero-shirt.jpeg"
-                      alt="Premium Laundry Service"
-                      width={400}
-                      height={400}
-                      className="w-full h-full object-cover rounded-3xl"
-                      priority
-                    />
-                  </motion.div>
+                  <Image
+                    src="/assets/hero-shirt.jpeg"
+                    alt="Premium Laundry Service"
+                    width={400}
+                    height={400}
+                    className="w-full h-full object-cover rounded-3xl"
+                    priority
+                  />
                 </div>
-
-                {/* Floating Orbs */}
-                <motion.div
-                  animate={{
-                    x: [0, 25, 0],
-                    y: [0, -25, 0],
-                    scale: [1, 1.3, 1],
-                  }}
-                  transition={{
-                    duration: 5,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                  className="absolute -top-8 -left-8 w-40 h-40 bg-gradient-to-br from-purple-glow/50 to-pink-500/50 rounded-full blur-3xl"
-                />
-                <motion.div
-                  animate={{
-                    x: [0, -20, 0],
-                    y: [0, 20, 0],
-                    scale: [1, 1.2, 1],
-                  }}
-                  transition={{
-                    duration: 6,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                    delay: 1,
-                  }}
-                  className="absolute -bottom-10 -right-10 w-48 h-48 bg-gradient-to-br from-soft-blue/50 to-cyan-500/50 rounded-full blur-3xl"
-                />
               </div>
             </motion.div>
 
@@ -325,7 +271,7 @@ export default function Hero() {
                   <div className="flex items-center gap-4">
                     <div className="relative p-4 bg-gradient-to-br from-purple-glow/30 to-soft-blue/30 rounded-xl group-hover:scale-110 transition-transform">
                       <card.icon className="w-7 h-7 text-purple-400 group-hover:text-purple-300" />
-                      <div className="absolute inset-0 bg-gradient-to-br from-purple-glow/50 to-transparent rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity animate-pulse-glow" />
+                      <div className="absolute inset-0 bg-gradient-to-br from-purple-glow/50 to-transparent rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity" />
                     </div>
                     <div>
                       <p className="font-bold text-white text-base mb-1">
