@@ -46,6 +46,7 @@ export default function Hero() {
           loop
           muted
           playsInline
+          preload="none"
           className="w-full h-full object-cover opacity-25 scale-105"
           poster="/assets/soft-gradient.jpeg"
         >
@@ -67,7 +68,7 @@ export default function Hero() {
             }}
             className="w-full max-w-4xl opacity-15 mix-blend-screen"
           >
-            <video autoPlay loop muted playsInline className="w-full h-auto">
+            <video autoPlay loop muted playsInline preload="none" className="w-full h-auto">
               <source src="/assets/floating-shirt-loop.mp4" type="video/mp4" />
             </video>
           </motion.div>

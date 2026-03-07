@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Star, Quote } from "lucide-react";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -58,10 +59,13 @@ export default function Testimonials() {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="relative inline-block mb-6"
           >
-            <img
+            <Image
               src="/assets/minimal-icons.jpeg"
               alt=""
+              width={64}
+              height={64}
               className="w-16 h-16 object-cover rounded-2xl opacity-60 mx-auto"
+              loading="lazy"
             />
           </motion.div>
           <h2 className="font-display text-5xl lg:text-7xl font-bold text-white mb-6 cinematic-text tracking-tight">

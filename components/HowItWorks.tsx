@@ -63,6 +63,7 @@ export default function HowItWorks() {
               width={112}
               height={112}
               className="w-full h-full object-contain"
+              loading="lazy"
             />
           </motion.div>
 

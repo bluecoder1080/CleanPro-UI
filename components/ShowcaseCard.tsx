@@ -40,6 +40,7 @@ export default function ShowcaseCard() {
                     alt="Folded Clothes Stack"
                     fill
                     className="object-cover"
+                    loading="lazy"
                   />
                   {/* Image Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-br from-purple-glow/20 to-transparent" />

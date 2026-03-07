@@ -37,6 +37,7 @@ export default function TrustSection() {
                 width={200}
                 height={48}
                 className="h-12 w-auto object-contain"
+                loading="lazy"
               />
             </motion.div>
             <motion.div
