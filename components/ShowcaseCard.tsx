@@ -9,8 +9,8 @@ export default function ShowcaseCard() {
     <section className="relative py-32 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-soft-blue/10 rounded-full blur-[120px]" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-glow/10 rounded-full blur-[120px]" />
+        <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-accent-pink/10 rounded-full blur-[120px]" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent-pink/10 rounded-full blur-[120px]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
@@ -25,7 +25,7 @@ export default function ShowcaseCard() {
           <motion.div
             whileHover={{ y: -15, scale: 1.02 }}
             transition={{ duration: 0.5 }}
-            className="glass-card rounded-[3rem] overflow-hidden glow-purple border-2 border-white/10"
+            className="glass-card rounded-[3rem] overflow-hidden glow-accent border-2 border-white/10"
           >
             <div className="grid md:grid-cols-2 gap-0">
               {/* Image Side */}
@@ -43,12 +43,12 @@ export default function ShowcaseCard() {
                     loading="lazy"
                   />
                   {/* Image Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-glow/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent-pink/20 to-transparent" />
                 </motion.div>
               </div>
 
               {/* Content Side */}
-              <div className="p-10 lg:p-14 flex flex-col justify-center bg-gradient-to-br from-navy-900/50 to-navy-800/50 backdrop-blur-xl">
+              <div className="p-10 lg:p-14 flex flex-col justify-center bg-gradient-to-br from-navy-950/50 to-navy-800/50 backdrop-blur-xl">
                 <motion.div
                   initial={{ opacity: 0, x: 30 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -68,7 +68,7 @@ export default function ShowcaseCard() {
 
                   <p className="text-xl lg:text-2xl text-gray-300">
                     Clothes cleaned to{" "}
-                    <span className="font-semibold bg-gradient-to-r from-purple-glow to-soft-blue bg-clip-text text-transparent">
+                    <span className="font-semibold bg-gradient-to-r from-accent-pink to-accent-brown bg-clip-text text-transparent">
                       perfection
                     </span>
                   </p>
@@ -84,9 +84,9 @@ export default function ShowcaseCard() {
                           delay: 0.5,
                           ease: "easeOut",
                         }}
-                        className="bg-gradient-to-r from-soft-blue via-purple-glow to-pink-500 h-3 rounded-full relative"
+                        className="bg-gradient-to-r from-accent-pink via-accent-brown to-orange-400 h-3 rounded-full relative"
                       >
-                        <div className="absolute inset-0 bg-gradient-to-r from-soft-blue via-purple-glow to-pink-500 blur-md" />
+                        <div className="absolute inset-0 bg-gradient-to-r from-accent-pink via-accent-brown to-orange-400 blur-md" />
                       </motion.div>
                     </div>
                     <span className="text-lg font-bold text-white">78%</span>
@@ -103,7 +103,7 @@ export default function ShowcaseCard() {
               scale: [1, 1.2, 1],
             }}
             transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-            className="absolute -top-10 -right-10 w-40 h-40 bg-gradient-to-br from-purple-glow/30 to-soft-blue/30 rounded-full blur-3xl"
+            className="absolute -top-10 -right-10 w-40 h-40 bg-gradient-to-br from-accent-pink/30 to-accent-brown/30 rounded-full blur-3xl"
           />
           <motion.div
             animate={{

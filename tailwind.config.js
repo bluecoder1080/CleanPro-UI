@@ -9,13 +9,13 @@ module.exports = {
     extend: {
       colors: {
         navy: {
-          900: "#0a0f1e",
-          800: "#0d1220",
-          700: "#141b2d",
-          600: "#1a2332",
+          950: "#1a1a1a",
+          900: "#4c243a",
+          800: "#5a2d48",
+          700: "#6b3656",
         },
-        "soft-blue": "#4a6fa5",
-        "purple-glow": "#8b5cf6",
+        "accent-pink": "#ce5573",
+        "accent-brown": "#4f381e",
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],

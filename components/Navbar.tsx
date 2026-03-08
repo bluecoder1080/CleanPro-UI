@@ -67,7 +67,7 @@ export default function Navbar() {
                 className="text-gray-300 hover:text-white font-medium transition-colors relative group"
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-soft-blue to-purple-glow group-hover:w-full transition-all duration-300" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-accent-pink to-accent-brown group-hover:w-full transition-all duration-300" />
               </motion.a>
             ))}
           </div>
@@ -82,7 +82,7 @@ export default function Navbar() {
               boxShadow: "0 0 40px rgba(139, 92, 246, 0.5)",
             }}
             whileTap={{ scale: 0.95 }}
-            className="hidden md:block px-6 py-3 bg-gradient-to-r from-soft-blue to-purple-glow text-white rounded-full font-semibold shadow-lg hover:shadow-purple-glow/50 transition-all"
+            className="hidden md:block px-6 py-3 bg-gradient-to-r from-accent-pink to-accent-brown text-white rounded-full font-semibold shadow-lg hover:shadow-accent-pink/50 transition-all"
           >
             Get the App
           </motion.button>
@@ -114,7 +114,7 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
-            <button className="w-full px-6 py-3 bg-gradient-to-r from-soft-blue to-purple-glow text-white rounded-full font-semibold shadow-lg mt-4">
+            <button className="w-full px-6 py-3 bg-gradient-to-r from-accent-pink to-accent-brown text-white rounded-full font-semibold shadow-lg mt-4">
               Get the App
             </button>
           </motion.div>

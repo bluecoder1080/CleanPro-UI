@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function FinalCTA() {
   return (
-    <section className="relative py-20 lg:py-32 bg-gradient-to-br from-navy-900 via-navy-800 to-navy-900 overflow-hidden">
+    <section className="relative py-20 lg:py-32 bg-gradient-to-br from-navy-950 via-navy-800 to-navy-950 overflow-hidden">
       {/* Animated Background Glows */}
       <div className="absolute inset-0">
         <motion.div
@@ -14,7 +14,7 @@ export default function FinalCTA() {
             opacity: [0.15, 0.25, 0.15],
           }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-0 left-1/4 w-[800px] h-[800px] bg-gradient-to-br from-soft-blue to-purple-glow rounded-full blur-[150px]"
+          className="absolute top-0 left-1/4 w-[800px] h-[800px] bg-gradient-to-br from-accent-pink to-accent-brown rounded-full blur-[150px]"
         />
         <motion.div
           animate={{
@@ -30,7 +30,7 @@ export default function FinalCTA() {
             rotate: [0, 180, 360],
           }}
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-glow/20 rounded-full blur-[120px]"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent-pink/20 rounded-full blur-[120px]"
         />
       </div>
 
@@ -49,7 +49,7 @@ export default function FinalCTA() {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="relative inline-block mb-8"
           >
-            <div className="w-20 h-20 bg-gradient-to-br from-soft-blue via-purple-glow to-purple-600 rounded-3xl flex items-center justify-center shadow-2xl glow-purple">
+            <div className="w-20 h-20 bg-gradient-to-br from-accent-pink via-accent-brown to-orange-500 rounded-3xl flex items-center justify-center shadow-2xl glow-accent">
               <ArrowRight className="w-10 h-10 text-white" />
             </div>
           </motion.div>
@@ -58,7 +58,7 @@ export default function FinalCTA() {
           <h2 className="font-display text-5xl lg:text-7xl xl:text-8xl font-bold text-white mb-8 cinematic-text tracking-tight leading-tight">
             Experience Laundry Care
             <br />
-            <span className="bg-gradient-to-r from-soft-blue via-purple-glow to-pink-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-accent-pink via-accent-brown to-orange-400 bg-clip-text text-transparent">
               Like Never Before
             </span>
           </h2>
@@ -76,14 +76,14 @@ export default function FinalCTA() {
               y: -2,
             }}
             whileTap={{ scale: 0.95 }}
-            className="relative inline-flex items-center px-12 py-6 bg-white text-gray-900 rounded-full font-display font-bold text-xl shadow-2xl hover:shadow-purple-glow/50 transition-all group overflow-hidden"
+            className="relative inline-flex items-center px-12 py-6 bg-white text-gray-900 rounded-full font-display font-bold text-xl shadow-2xl hover:shadow-accent-pink/50 transition-all group overflow-hidden"
           >
             <span className="relative z-10 flex items-center">
               Get the App
               <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-2 transition-transform" />
             </span>
             {/* Button Glow Effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-soft-blue/20 via-purple-glow/20 to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity rounded-full blur-xl" />
+            <div className="absolute inset-0 bg-gradient-to-r from-accent-pink/20 via-accent-brown/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity rounded-full blur-xl" />
           </motion.button>
 
           {/* Trust Indicators */}
@@ -131,7 +131,7 @@ export default function FinalCTA() {
               className="flex items-center glass-card-light px-6 py-3 rounded-2xl border border-white/5"
             >
               <svg
-                className="w-5 h-5 mr-2 text-soft-blue"
+                className="w-5 h-5 mr-2 text-accent-pink"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

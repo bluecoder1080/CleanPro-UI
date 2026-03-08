@@ -10,24 +10,24 @@ const features = [
     title: "Premium Fabric Care",
     description:
       "Expert handling of delicate materials with specialized treatments for lasting quality and perfection.",
-    color: "from-blue-500 to-cyan-400",
-    glow: "glow-blue",
+    color: "from-accent-pink to-orange-500",
+    glow: "glow-accent",
   },
   {
     icon: Leaf,
     title: "Eco Friendly Cleaning",
     description:
       "Sustainable practices using biodegradable detergents and energy-efficient processes that care for the planet.",
-    color: "from-green-500 to-emerald-400",
-    glow: "",
+    color: "from-accent-brown to-orange-400",
+    glow: "glow-accent",
   },
   {
     icon: Zap,
     title: "Same Day Delivery",
     description:
       "Fast turnaround without compromising quality. Your clothes ready when you need them, guaranteed.",
-    color: "from-purple-500 to-pink-400",
-    glow: "glow-purple",
+    color: "from-accent-pink to-accent-brown",
+    glow: "glow-accent",
   },
 ];
 
@@ -36,8 +36,8 @@ export default function Features() {
     <section id="features" className="relative py-32 lg:py-40 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-96 h-96 bg-purple-glow/10 rounded-full blur-[120px]" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-soft-blue/10 rounded-full blur-[120px]" />
+        <div className="absolute top-20 left-10 w-96 h-96 bg-accent-pink/10 rounded-full blur-[120px]" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent-brown/10 rounded-full blur-[120px]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
@@ -68,7 +68,7 @@ export default function Features() {
 
           <h2 className="font-display text-5xl lg:text-7xl font-bold text-white mb-6 cinematic-text">
             Why Choose{" "}
-            <span className="bg-gradient-to-r from-soft-blue to-purple-glow bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-accent-pink to-accent-brown bg-clip-text text-transparent">
               CleanPro
             </span>
           </h2>
@@ -94,7 +94,7 @@ export default function Features() {
               <div
                 className={`absolute inset-0 rounded-[2.5rem] bg-gradient-to-br ${feature.color} opacity-0 group-hover:opacity-20 transition-opacity duration-500 p-[1px]`}
               >
-                <div className="w-full h-full rounded-[2.5rem] bg-navy-900" />
+                <div className="w-full h-full rounded-[2.5rem] bg-navy-950" />
               </div>
 
               {/* Content */}
@@ -146,7 +146,7 @@ export default function Features() {
               boxShadow: "0 0 60px rgba(139, 92, 246, 0.5)",
             }}
             whileTap={{ scale: 0.98 }}
-            className="px-8 py-4 glass-card-light text-white rounded-full font-semibold text-lg hover:glow-purple transition-all"
+            className="px-8 py-4 glass-card-light text-white rounded-full font-semibold text-lg hover:glow-accent transition-all"
           >
             Explore All Services
           </motion.button>

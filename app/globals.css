@@ -7,12 +7,12 @@
 
 :root {
   --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 10, 15, 30;
-  --background-end-rgb: 15, 20, 40;
-  --navy: #0a0f1e;
-  --deep-navy: #0d1220;
-  --soft-blue: #4a6fa5;
-  --purple-glow: #8b5cf6;
+  --background-start-rgb: 26, 26, 26;
+  --background-end-rgb: 76, 36, 58;
+  --navy: #1a1a1a;
+  --deep-navy: #4c243a;
+  --accent-pink: #ce5573;
+  --accent-brown: #4f381e;
 }
 
 * {
@@ -32,8 +32,8 @@ body {
   color: rgb(var(--foreground-rgb));
   background: radial-gradient(
     ellipse at top,
-    #1a1f3a 0%,
-    #0a0f1e 50%,
+    #4c243a 0%,
+    #1a1a1a 50%,
     #000000 100%
   );
   background-attachment: fixed;
@@ -72,20 +72,26 @@ body {
 
   .glow-blue {
     box-shadow:
-      0 0 60px rgba(74, 111, 165, 0.4),
-      0 0 100px rgba(74, 111, 165, 0.2);
+      0 0 60px rgba(206, 85, 115, 0.4),
+      0 0 100px rgba(206, 85, 115, 0.2);
   }
 
   .glow-purple {
     box-shadow:
-      0 0 60px rgba(139, 92, 246, 0.5),
-      0 0 100px rgba(139, 92, 246, 0.3);
+      0 0 60px rgba(206, 85, 115, 0.5),
+      0 0 100px rgba(206, 85, 115, 0.3);
+  }
+
+  .glow-accent {
+    box-shadow:
+      0 0 60px rgba(206, 85, 115, 0.5),
+      0 0 100px rgba(206, 85, 115, 0.3);
   }
 
   .cinematic-text {
     text-shadow:
       0 2px 40px rgba(0, 0, 0, 0.8),
-      0 0 80px rgba(139, 92, 246, 0.3);
+      0 0 80px rgba(206, 85, 115, 0.3);
   }
 
   .hover-lift {
@@ -98,8 +104,8 @@ body {
 
   .glow-text {
     text-shadow:
-      0 0 20px rgba(139, 92, 246, 0.5),
-      0 0 40px rgba(74, 111, 165, 0.3);
+      0 0 20px rgba(206, 85, 115, 0.5),
+      0 0 40px rgba(79, 56, 30, 0.3);
   }
 
   .parallax-slow {

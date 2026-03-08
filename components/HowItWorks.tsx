@@ -36,8 +36,8 @@ export default function HowItWorks() {
     >
       {/* Layered Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 right-1/4 w-[500px] h-[500px] bg-soft-blue/15 rounded-full blur-[140px]" />
-        <div className="absolute bottom-20 left-1/3 w-[600px] h-[600px] bg-purple-glow/12 rounded-full blur-[120px]" />
+        <div className="absolute top-20 right-1/4 w-[500px] h-[500px] bg-accent-brown/15 rounded-full blur-[140px]" />
+        <div className="absolute bottom-20 left-1/3 w-[600px] h-[600px] bg-accent-pink/12 rounded-full blur-[120px]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
@@ -69,7 +69,7 @@ export default function HowItWorks() {
 
           <h2 className="font-display text-5xl lg:text-7xl font-bold text-white mb-6 cinematic-text tracking-tight">
             How It{" "}
-            <span className="bg-gradient-to-r from-soft-blue via-purple-glow to-pink-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-accent-pink via-accent-brown to-orange-400 bg-clip-text text-transparent">
               Works
             </span>
           </h2>
@@ -92,11 +92,11 @@ export default function HowItWorks() {
             >
               {/* Connecting Line (Desktop) */}
               {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-20 left-1/2 w-full h-px bg-gradient-to-r from-purple-glow/30 via-soft-blue/30 to-transparent" />
+                <div className="hidden md:block absolute top-20 left-1/2 w-full h-px bg-gradient-to-r from-accent-pink/30 via-accent-brown/30 to-transparent" />
               )}
 
               {/* Card Container */}
-              <div className="relative text-center glass-card rounded-[2.5rem] p-10 border border-white/5 hover:border-white/10 transition-all duration-500 hover:glow-purple">
+              <div className="relative text-center glass-card rounded-[2.5rem] p-10 border border-white/5 hover:border-white/10 transition-all duration-500 hover:glow-accent">
                 {/* Number Badge */}
                 <motion.div
                   initial={{ scale: 0, rotate: -180 }}
@@ -107,12 +107,12 @@ export default function HowItWorks() {
                     type: "spring",
                     stiffness: 100,
                   }}
-                  className="inline-flex items-center justify-center w-20 h-20 mb-8 bg-gradient-to-br from-soft-blue via-purple-glow to-purple-600 rounded-2xl shadow-lg glow-purple relative"
+                  className="inline-flex items-center justify-center w-20 h-20 mb-8 bg-gradient-to-br from-accent-pink via-accent-brown to-orange-500 rounded-2xl shadow-lg glow-accent relative"
                 >
                   <span className="font-display text-3xl font-bold text-white">
                     {step.number}
                   </span>
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-glow/50 to-transparent rounded-2xl blur-lg opacity-50 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent-pink/50 to-transparent rounded-2xl blur-lg opacity-50 group-hover:opacity-100 transition-opacity" />
                 </motion.div>
 
                 {/* Icon */}
@@ -121,11 +121,11 @@ export default function HowItWorks() {
                   transition={{ duration: 0.6 }}
                   className="inline-flex items-center justify-center w-24 h-24 mb-8 glass-card-light rounded-3xl border border-white/10"
                 >
-                  <step.icon className="w-12 h-12 text-purple-glow group-hover:text-purple-400 transition-colors" />
+                  <step.icon className="w-12 h-12 text-accent-pink group-hover:text-accent-pink/80 transition-colors" />
                 </motion.div>
 
                 {/* Title */}
-                <h3 className="font-display text-2xl lg:text-3xl font-bold text-white mb-5 tracking-tight group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-soft-blue group-hover:to-purple-glow group-hover:bg-clip-text transition-all duration-300">
+                <h3 className="font-display text-2xl lg:text-3xl font-bold text-white mb-5 tracking-tight group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-accent-pink group-hover:to-accent-brown group-hover:bg-clip-text transition-all duration-300">
                   {step.title}
                 </h3>
 
@@ -135,7 +135,7 @@ export default function HowItWorks() {
                 </p>
 
                 {/* Hover Glow */}
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-glow/0 to-soft-blue/0 group-hover:from-purple-glow/10 group-hover:to-soft-blue/10 rounded-[2.5rem] transition-all duration-500 -z-10 blur-xl" />
+                <div className="absolute inset-0 bg-gradient-to-br from-accent-pink/0 to-accent-brown/0 group-hover:from-accent-pink/10 group-hover:to-accent-brown/10 rounded-[2.5rem] transition-all duration-500 -z-10 blur-xl" />
               </div>
             </motion.div>
           ))}

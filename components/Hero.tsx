@@ -68,18 +68,18 @@ export default function Hero() {
             }}
             className="w-full max-w-4xl opacity-10"
           >
-            <div className="w-[800px] h-[800px] bg-gradient-to-br from-purple-glow/20 via-soft-blue/20 to-pink-500/20 rounded-full blur-[80px]" />
+            <div className="w-[800px] h-[800px] bg-gradient-to-br from-accent-brown/20 via-accent-pink/20 to-pink-500/20 rounded-full blur-[80px]" />
           </motion.div>
         </div>
 
         {/* Layered Dark Gradient Overlays */}
-        <div className="absolute inset-0 bg-gradient-to-b from-navy-900/98 via-navy-900/92 to-navy-900/96" />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-900 via-navy-900/70 to-navy-900/85" />
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-900/50 via-transparent to-purple-glow/5" />
+        <div className="absolute inset-0 bg-gradient-to-b from-navy-950/98 via-navy-950/92 to-navy-950/96" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/70 to-navy-950/85" />
+        <div className="absolute inset-0 bg-gradient-to-br from-navy-950/50 via-transparent to-accent-brown/5" />
 
         {/* Enhanced Ambient Glow Effects */}
-        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-purple-glow/8 rounded-full blur-[100px]" />
-        <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-soft-blue/8 rounded-full blur-[100px]" />
+        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-accent-brown/8 rounded-full blur-[100px]" />
+        <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-accent-pink/8 rounded-full blur-[100px]" />
 
         {/* Grid Pattern Overlay */}
         <div
@@ -109,7 +109,7 @@ export default function Hero() {
               transition={{ delay: 0.2 }}
               className="inline-flex items-center gap-3 glass-card px-5 py-2.5 rounded-full"
             >
-              <Sparkles className="w-4 h-4 text-purple-glow" />
+              <Sparkles className="w-4 h-4 text-accent-brown" />
               <span className="text-sm font-medium text-gray-300 uppercase tracking-wider">
                 Premium Laundry Service
               </span>
@@ -129,7 +129,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
-                className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl block bg-gradient-to-r from-soft-blue via-purple-glow to-purple-400 bg-clip-text text-transparent"
+                className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl block bg-gradient-to-r from-accent-pink via-accent-brown to-purple-400 bg-clip-text text-transparent"
               >
                 Level of Care
               </motion.span>
@@ -195,7 +195,7 @@ export default function Hero() {
                   boxShadow: "0 0 60px rgba(139, 92, 246, 0.6)",
                 }}
                 whileTap={{ scale: 0.98 }}
-                className="group relative px-10 py-5 bg-gradient-to-r from-soft-blue via-purple-glow to-purple-600 text-white rounded-full font-semibold text-lg overflow-hidden glow-purple"
+                className="group relative px-10 py-5 bg-gradient-to-r from-accent-pink via-accent-brown to-purple-600 text-white rounded-full font-semibold text-lg overflow-hidden glow-accent"
               >
                 <span className="relative z-10">Get Started</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -224,7 +224,7 @@ export default function Hero() {
               className="relative w-full h-full flex items-center justify-center"
             >
               {/* Ambient Glow Layers - Simplified */}
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-glow/30 to-soft-blue/30 rounded-full blur-[100px]" />
+              <div className="absolute inset-0 bg-gradient-to-br from-accent-brown/30 to-accent-pink/30 rounded-full blur-[100px]" />
 
               <div className="relative glass-card rounded-[3.5rem] p-8 w-96 h-96 border-2 border-white/15 flex items-center justify-center">
                 {/* Image Container */}
@@ -266,12 +266,12 @@ export default function Hero() {
                     ease: "easeInOut",
                   }}
                   whileHover={{ scale: 1.15, rotate: 5, z: 50 }}
-                  className="glass-card-light p-6 rounded-2xl cursor-pointer group hover:glow-purple transition-all hover-lift backdrop-blur-3xl border-2 border-white/10"
+                  className="glass-card-light p-6 rounded-2xl cursor-pointer group hover:glow-accent transition-all hover-lift backdrop-blur-3xl border-2 border-white/10"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="relative p-4 bg-gradient-to-br from-purple-glow/30 to-soft-blue/30 rounded-xl group-hover:scale-110 transition-transform">
+                    <div className="relative p-4 bg-gradient-to-br from-accent-brown/30 to-accent-pink/30 rounded-xl group-hover:scale-110 transition-transform">
                       <card.icon className="w-7 h-7 text-purple-400 group-hover:text-purple-300" />
-                      <div className="absolute inset-0 bg-gradient-to-br from-purple-glow/50 to-transparent rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity" />
+                      <div className="absolute inset-0 bg-gradient-to-br from-accent-brown/50 to-transparent rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity" />
                     </div>
                     <div>
                       <p className="font-bold text-white text-base mb-1">
@@ -284,7 +284,7 @@ export default function Hero() {
                   </div>
 
                   {/* Card Glow Effect */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-glow/0 to-soft-blue/0 group-hover:from-purple-glow/20 group-hover:to-soft-blue/20 rounded-2xl transition-all duration-500 -z-10 blur-xl" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent-brown/0 to-accent-pink/0 group-hover:from-accent-brown/20 group-hover:to-accent-pink/20 rounded-2xl transition-all duration-500 -z-10 blur-xl" />
                 </motion.div>
               </motion.div>
             ))}
@@ -293,7 +293,7 @@ export default function Hero() {
       </div>
 
       {/* Bottom Fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-navy-900 to-transparent z-[5]" />
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-navy-950 to-transparent z-[5]" />
     </section>
   );
 }

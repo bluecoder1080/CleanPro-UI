@@ -54,9 +54,9 @@ export default function Pricing() {
     <section id="pricing" className="relative py-32 lg:py-40 overflow-hidden">
       {/* Layered Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-purple-glow/15 rounded-full blur-[120px]" />
-        <div className="absolute bottom-0 right-1/3 w-[500px] h-[500px] bg-soft-blue/15 rounded-full blur-[130px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-purple-glow/10 to-transparent rounded-full blur-3xl" />
+        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-accent-brown/15 rounded-full blur-[120px]" />
+        <div className="absolute bottom-0 right-1/3 w-[500px] h-[500px] bg-accent-pink/15 rounded-full blur-[130px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-accent-brown/10 to-transparent rounded-full blur-3xl" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
@@ -88,7 +88,7 @@ export default function Pricing() {
 
           <h2 className="font-display text-5xl lg:text-7xl font-bold text-white mb-6 cinematic-text tracking-tight">
             Simple, Transparent{" "}
-            <span className="bg-gradient-to-r from-soft-blue via-purple-glow to-pink-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-accent-pink via-accent-brown to-orange-400 bg-clip-text text-transparent">
               Pricing
             </span>
           </h2>
@@ -109,7 +109,7 @@ export default function Pricing() {
               whileHover={{ y: -15, scale: 1.02 }}
               className={`relative glass-card rounded-[2.5rem] p-10 transition-all duration-500 group ${
                 plan.highlighted
-                  ? "md:scale-105 glow-purple border-2 border-purple-glow/40"
+                  ? "md:scale-105 glow-accent border-2 border-accent-pink/40"
                   : "border-2 border-white/5"
               }`}
             >
@@ -120,7 +120,7 @@ export default function Pricing() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.5 }}
-                  className="absolute -top-4 left-1/2 -translate-x-1/2 px-6 py-2.5 bg-gradient-to-r from-soft-blue via-purple-glow to-purple-600 text-white rounded-full text-sm font-bold shadow-lg flex items-center glow-purple"
+                  className="absolute -top-4 left-1/2 -translate-x-1/2 px-6 py-2.5 bg-gradient-to-r from-accent-pink via-accent-brown to-orange-500 text-white rounded-full text-sm font-bold shadow-lg flex items-center glow-accent"
                 >
                   <Zap className="w-4 h-4 mr-2" />
                   Most Popular
@@ -129,7 +129,7 @@ export default function Pricing() {
 
               {/* Glow Effect for Highlighted */}
               {plan.highlighted && (
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-glow/20 to-soft-blue/20 rounded-[2.5rem] blur-xl -z-10 group-hover:blur-2xl transition-all duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-br from-accent-pink/20 to-accent-brown/20 rounded-[2.5rem] blur-xl -z-10 group-hover:blur-2xl transition-all duration-500" />
               )}
 
               {/* Plan Name */}
@@ -178,7 +178,7 @@ export default function Pricing() {
                 whileTap={{ scale: 0.98 }}
                 className={`w-full py-4 rounded-full font-bold text-lg transition-all smooth-transition ${
                   plan.highlighted
-                    ? "bg-gradient-to-r from-soft-blue via-purple-glow to-purple-600 text-white glow-purple"
+                    ? "bg-gradient-to-r from-accent-pink via-accent-brown to-orange-500 text-white glow-accent"
                     : "glass-card-light text-white hover:border-white/20 border border-white/10"
                 }`}
               >
