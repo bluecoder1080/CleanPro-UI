@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import Image from "next/image";
+import Logo from "./Logo";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,14 +40,8 @@ export default function Navbar() {
             whileHover={{ scale: 1.1 }}
             className="flex items-center space-x-3 cursor-pointer group"
           >
-            <div className="relative w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 group-hover:border-white/20 transition-all p-1">
-              <Image
-                src="/CleanProLogo.png"
-                alt="CleanPro Logo"
-                width={56}
-                height={56}
-                className="w-full h-full object-contain rounded-lg"
-              />
+            <div className="p-1.5 rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 group-hover:border-accent-pink/30 transition-all">
+              <Logo width={48} height={48} />
             </div>
             <span className="text-2xl font-bold text-white hidden sm:inline">
               CleanPro

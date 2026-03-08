@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Facebook, Twitter, Instagram, Linkedin, Mail } from "lucide-react";
-import Image from "next/image";
+import Logo from "./Logo";
 
 const footerLinks = {
   Product: ["Features", "Pricing", "How It Works", "FAQ"],
@@ -35,14 +35,8 @@ export default function Footer() {
               className="mb-6"
             >
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 p-1">
-                  <Image
-                    src="/CleanProLogo.png"
-                    alt="CleanPro Logo"
-                    width={56}
-                    height={56}
-                    className="w-full h-full object-contain rounded-lg"
-                  />
+                <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-gradient-to-br from-white/5 to-white/10 border border-white/10">
+                  <Logo width={40} height={40} />
                 </div>
                 <span className="font-display text-2xl font-bold text-white">
                   CleanPro
