@@ -40,10 +40,10 @@ export default function Navbar() {
             whileHover={{ scale: 1.1 }}
             className="flex items-center space-x-3 cursor-pointer group"
           >
-            <div className="p-1.5 rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 group-hover:border-accent-pink/30 transition-all">
-              <Logo width={48} height={48} />
+            <div className="p-2 rounded-lg bg-gradient-to-br from-accent-pink/10 to-accent-brown/10 border border-accent-pink/20 group-hover:border-accent-pink/40 transition-all">
+              <Logo width={44} height={44} />
             </div>
-            <span className="text-2xl font-bold text-white hidden sm:inline">
+            <span className="text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent hidden sm:inline">
               CleanPro
             </span>
           </motion.div>

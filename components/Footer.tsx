@@ -35,10 +35,10 @@ export default function Footer() {
               className="mb-6"
             >
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-gradient-to-br from-white/5 to-white/10 border border-white/10">
+                <div className="p-1.5 rounded-lg bg-gradient-to-br from-accent-pink/10 to-accent-brown/10 border border-accent-pink/20">
                   <Logo width={40} height={40} />
                 </div>
-                <span className="font-display text-2xl font-bold text-white">
+                <span className="font-display text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                   CleanPro
                 </span>
               </div>

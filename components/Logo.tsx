@@ -13,115 +13,92 @@ export default function Logo({
 }: LogoProps) {
   return (
     <svg
-      viewBox="0 0 200 200"
+      viewBox="0 0 100 100"
       width={width}
       height={height}
       className={className}
       xmlns="http://www.w3.org/2000/svg"
     >
       <defs>
-        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <linearGradient
+          id="premiumGradient"
+          x1="0%"
+          y1="0%"
+          x2="100%"
+          y2="100%"
+        >
           <stop offset="0%" stopColor="#ce5573" />
-          <stop offset="100%" stopColor="#4f381e" />
+          <stop offset="50%" stopColor="#d96a86" />
+          <stop offset="100%" stopColor="#a84a62" />
         </linearGradient>
-        <filter id="logoGlow">
-          <feGaussianBlur stdDeviation="2" result="coloredBlur" />
-          <feMerge>
-            <feMergeNode in="coloredBlur" />
-            <feMergeNode in="SourceGraphic" />
-          </feMerge>
+
+        <linearGradient id="glossGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stopColor="#ffffff" stopOpacity="0.5" />
+          <stop offset="50%" stopColor="#ffffff" stopOpacity="0.1" />
+          <stop offset="100%" stopColor="#000000" stopOpacity="0" />
+        </linearGradient>
+
+        <filter id="shadowFilter">
+          <feDropShadow
+            dx="0"
+            dy="2"
+            stdDeviation="2.5"
+            floodOpacity="0.2"
+            floodColor="#ce5573"
+          />
         </filter>
       </defs>
 
-      {/* Background Circle */}
-      <circle
-        cx="100"
-        cy="100"
-        r="95"
-        fill="none"
-        stroke="url(#logoGradient)"
-        strokeWidth="1.5"
-        opacity="0.3"
-      />
-
-      {/* Inner Circle - Premium Background */}
-      <circle cx="100" cy="100" r="85" fill="#1a1a1a" />
-
-      {/* Glow Effect */}
-      <circle
-        cx="100"
-        cy="100"
-        r="85"
-        fill="url(#logoGradient)"
-        opacity="0.05"
-        filter="url(#logoGlow)"
-      />
-
-      {/* Premium Icon - Abstract Sparkle/Shine */}
-      <g filter="url(#logoGlow)">
-        {/* Main Shape - Stylized Garment/Sparkle */}
+      {/* Premium Garment Icon - Minimalist */}
+      <g filter="url(#shadowFilter)">
+        {/* Main Garment Body - Elegant Silhouette */}
         <path
-          d="M 100 50 L 130 80 L 130 120 Q 100 140 70 120 L 70 80 Z"
-          fill="url(#logoGradient)"
-          opacity="0.9"
+          d="M 28 24 C 26.5 24 26 25 26 26 L 26 44 C 26 54 29 60 34 65 C 39 70 46 73 50 73 C 54 73 61 70 66 65 C 71 60 74 54 74 44 L 74 26 C 74 25 73.5 24 72 24 L 56 24 C 55 24 54.5 21 50 21 C 45.5 21 45 24 44 24 L 28 24 Z"
+          fill="url(#premiumGradient)"
+          strokeWidth="0"
         />
 
-        {/* Highlight Line */}
+        {/* Left Sleeve - Elegant and Smooth */}
+        <ellipse cx="16" cy="36" rx="8.5" ry="14" fill="url(#premiumGradient)" opacity="0.95" />
+
+        {/* Right Sleeve - Elegant and Smooth */}
+        <ellipse cx="84" cy="36" rx="8.5" ry="14" fill="url(#premiumGradient)" opacity="0.95" />
+
+        {/* Premium Glossy Highlight - Ultra Shine Effect */}
+        <ellipse
+          cx="44"
+          cy="31"
+          rx="9"
+          ry="8"
+          fill="url(#glossGradient)"
+          opacity="0.75"
+        />
+
+        {/* Center Subtle Fold - Premium Detail */}
         <path
-          d="M 85 65 Q 100 60 115 70"
-          stroke="#ce5573"
-          strokeWidth="2.5"
+          d="M 50 26 Q 50 42 50 68"
+          stroke="#ffffff"
+          strokeWidth="0.8"
           fill="none"
+          opacity="0.25"
           strokeLinecap="round"
-          opacity="0.8"
         />
 
-        {/* Accent Sparkles */}
-        <g fontSize="16" fill="url(#logoGradient)" fontWeight="bold">
-          {/* Top Right Sparkle */}
-          <circle cx="135" cy="70" r="3" />
-          {/* Bottom Right Sparkle */}
-          <circle cx="140" cy="110" r="2.5" />
-          {/* Left Sparkle */}
-          <circle cx="62" cy="95" r="2.5" />
-        </g>
+        {/* Accent Sparkles - Small and Elegant */}
+        <circle cx="70" cy="26" r="1.2" fill="#ce5573" opacity="0.6" />
+        <circle cx="30" cy="26" r="1.2" fill="#ce5573" opacity="0.6" />
       </g>
 
-      {/* Text - CleanPro */}
-      <text
-        x="100"
-        y="160"
-        textAnchor="middle"
-        fontFamily="'Clash Display', 'Satoshi', sans-serif"
-        fontSize="18"
-        fontWeight="700"
-        letter-spacing="0.5"
-        fill="#ffffff"
-      >
-        CLEAN
-      </text>
-      <text
-        x="100"
-        y="178"
-        textAnchor="middle"
-        fontFamily="'Clash Display', 'Satoshi', sans-serif"
-        fontSize="14"
-        fontWeight="600"
-        letter-spacing="1"
-        fill="url(#logoGradient)"
-      >
-        PRO
-      </text>
-
-      {/* Decorative Bottom Line */}
+      {/* Elegant Bottom Accent Line */}
       <line
-        x1="65"
-        y1="185"
-        x2="135"
-        y2="185"
-        stroke="url(#logoGradient)"
-        strokeWidth="1.5"
-        opacity="0.5"
+        x1="26"
+        y1="80"
+        x2="74"
+        y2="80"
+        stroke="url(#premiumGradient)"
+        strokeWidth="1.8"
+        opacity="0.3"
+        strokeLinecap="round"
       />
     </svg>
   );
