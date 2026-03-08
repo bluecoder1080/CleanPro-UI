@@ -59,10 +59,24 @@ export default function Logo({
         />
 
         {/* Left Sleeve - Elegant and Smooth */}
-        <ellipse cx="16" cy="36" rx="8.5" ry="14" fill="url(#premiumGradient)" opacity="0.95" />
+        <ellipse
+          cx="16"
+          cy="36"
+          rx="8.5"
+          ry="14"
+          fill="url(#premiumGradient)"
+          opacity="0.95"
+        />
 
         {/* Right Sleeve - Elegant and Smooth */}
-        <ellipse cx="84" cy="36" rx="8.5" ry="14" fill="url(#premiumGradient)" opacity="0.95" />
+        <ellipse
+          cx="84"
+          cy="36"
+          rx="8.5"
+          ry="14"
+          fill="url(#premiumGradient)"
+          opacity="0.95"
+        />
 
         {/* Premium Glossy Highlight - Ultra Shine Effect */}
         <ellipse
